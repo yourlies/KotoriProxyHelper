@@ -1,20 +1,23 @@
 {
     "manifest_version": 2,
 
-    "name": "Kotori Proxy Helper",
-    "description": "This extension helps you to use Kotori Proxy easier.",
-    "version": "1.0",
+    "name": "__MSG_appName__",
+    "description": "__MSG_description__",
+    "version": "1.1",
+    "default_locale": "en",
 
     "browser_action": {
         "default_icon": {
-            "19": "icon-19.png",
-            "48": "icon-48.png"
+            "19": "imgs/icon-19.png",
+            "38": "imgs/icon-38.png"
         },
         "default_popup": "popup.html"
     },
     "icons": {
-        "19": "icon-19.png",
-        "48": "icon-48.png"
+        "256": "imgs/icon-256.png",
+        "128": "imgs/icon-128.png",
+        "16": "imgs/icon-16.png",
+        "32": "imgs/icon-32.png"
     },
     "permissions": [
         "tabs",
@@ -24,6 +27,6 @@
         "contextMenus"
     ],
     "background": {
-        "scripts": ["contentscript.js"]
+        "scripts": ["background.js"]
     }
 }

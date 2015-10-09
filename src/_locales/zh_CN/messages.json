@@ -1,0 +1,15 @@
+{
+    "appName": {
+        "message": "KotoriProxy助手"
+    },
+    "description": {
+        "message": "方便调用KotoriProxy的扩展程序。"
+    },
+    "mainAction": {
+        "message": "KotoriProxy一下"
+    },
+    "blogAction": {
+        "message": "访问博客"
+    }
+
+}

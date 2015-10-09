@@ -2,7 +2,7 @@
 Kotori Proxy快捷扩展程序，提供一个快速调用Kotori Proxy的方法。
 
 # 发行
-[GitHub](https://raw.githubusercontent.com/kokororin/KotoriProxyHelper/master/release/latest.crx)
+[Chrome Web Store](https://chrome.google.com/webstore/detail/kotoriproxyhelper/lbbigihkehdkplkkopffpjajihlhfekk?hl=zh-CN)
 
 # 更新日志
 * 2015/10/6 1.0

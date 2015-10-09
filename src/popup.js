@@ -1,8 +1,7 @@
 $(document).ready(function() {
 
-    $('#switch_proxy').html('KotoriProxy一下');
-    $('#check_update').html('检查更新');
-    $('#go_blog').html('前往博客');
+    $('#switch_proxy').html(chrome.i18n.getMessage('mainAction'));
+    $('#go_blog').html(chrome.i18n.getMessage('blogAction'));
 
 
     $('#switch_proxy').click(function() {
@@ -22,12 +21,6 @@ $(document).ready(function() {
             url: "https://kotori.love"
         });
         return false;
-    });
-
-    $('#check_update').click(function() {
-        chrome.tabs.create({
-            url: "https://github.com/kokororin/KotoriProxyHelper"
-        });
     });
 
 });
