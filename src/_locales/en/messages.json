@@ -5,10 +5,7 @@
     "description": {
         "message": "This extension helps you to use Kotori Proxy easier."
     },
-    "mainAction": {
+    "proxy": {
         "message": "Browse by KotoriProxy"
-    },
-    "blogAction": {
-        "message": "View blog"
     }
 }

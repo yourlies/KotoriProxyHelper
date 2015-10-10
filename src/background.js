@@ -1,5 +1,5 @@
 var menu = chrome.contextMenus.create({
-    "title": chrome.i18n.getMessage('mainAction'),
+    "title": chrome.i18n.getMessage('proxy'),
     "contexts": ["link"],
     "onclick": openUrlWindow
 });
@@ -11,6 +11,7 @@ function openUrlWindow(info, tab) {
     });
 }
 
+
 //弹出chrome通知
 function showNotification(opt) {
     var notification = chrome.notifications.create(status.toString(), opt, function(notifyId) {
@@ -20,6 +21,17 @@ function showNotification(opt) {
         chrome.notifications.clear(status.toString(), function() {});
     }, 5000);
 }
+
+//点击按钮
+chrome.browserAction.onClicked.addListener(function() {
+    chrome.tabs.getSelected(function(tab) {
+        var tabId = tab.id;
+        var tabUrl = tab.url;
+        chrome.tabs.update(tabId, {
+            url: "https://niconiconi.science/proxy.php/" + tabUrl
+        });
+    });
+});
 
 //软件版本更新提示
 var manifest = chrome.runtime.getManifest();

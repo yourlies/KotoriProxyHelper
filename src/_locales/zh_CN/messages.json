@@ -5,11 +5,8 @@
     "description": {
         "message": "方便调用KotoriProxy的扩展程序。"
     },
-    "mainAction": {
+    "proxy": {
         "message": "KotoriProxy一下"
-    },
-    "blogAction": {
-        "message": "访问博客"
     }
 
 }
